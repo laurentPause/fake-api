@@ -1,4 +1,7 @@
 {
+    "User":{
+        "identifier": ""
+    },
     "Post": {
       "title": { "string": {} },
       "comments": {
