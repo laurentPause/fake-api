@@ -1,32 +1,101 @@
 {
-    "User":{
-        "identifier": {"string": {}},
-        "name": {"loremWord": {}},
-        "validate": {"boolean": {}},
-        "password": {"string": {}},
-        "contrats": {
-          "hasMany": "Contrat"
-        }
+  "User": {
+    "identifier": {
+      "string": {}
     },
-    "Contrat":{
-        "num": {"int": {"min": 0, "max": 1000000}},
-        "category": {"string": ["Auto", "Scolaire", "Habitat", "Santé"]},
-        "formule": {"string": ["Essentiel", "Premium", "Méga"]},
-        "title": {"loremWord": {}},
-        "user": {
-          "belongsTo": "User"
-        }
+    "name": {
+      "loremWord": {}
     },
-    "Post": {
-      "title": { "string": {} },
-      "comments": {
-        "hasMany": "Comment"
+    "validate": {
+      "boolean": {}
+    },
+    "password": {
+      "string": {}
+    },
+    "contrats": {
+      "hasMany": "Contrat"
+    }
+  },
+  "Contrat": {
+    "num": {
+      "int": {
+        "min": 0,
+        "max": 1000000
       }
     },
-    "Comment": {
-      "body": { "string": {} },
-      "post": {
-        "belongsTo": "Post"
+    "category": {
+      "string": [
+        "Auto",
+        "Scolaire",
+        "Habitat",
+        "Santé"
+      ]
+    },
+    "formule": {
+      "string": [
+        "Essentiel",
+        "Premium",
+        "Méga"
+      ]
+    },
+    "title": {
+      "loremWord": {}
+    },
+    "user": {
+      "belongsTo": "User"
+    }
+  },
+  "Personal": {
+    "num": {
+      "int": {
+        "min": 0,
+        "max": 1000000
       }
+    },
+    "civility": {
+      "string": [
+        "Monsieur",
+        "Madame"
+      ]
+    },
+    "fullName": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "dateOfBirth": {
+      "dateTime": {
+        "min": "1950-01-01T00:00:00Z",
+        "max": "2000-12-31T23:59:59Z"
+      }
+    },
+    "placeOfBirth": {
+      "loremWord": {}
+    },
+    "address": {
+      "loremSentences": {
+        "minLength": 30,
+        "maxLength": 100
+      }
+    },
+    "postalCode": {
+      "int": {
+        "min": 97400,
+        "max": 97499
+      }
+    },
+    "cellphone": {
+      "regexp": "[0-9]{10}"
+    },
+    "email": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "occupation": {
+      "loremWord": {}
+    },
+    "socialSecurityNumber": {
+      "regexp": "[0-9]{10}"
     }
   }
+}
