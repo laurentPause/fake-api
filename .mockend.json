@@ -5,7 +5,7 @@
         "validate": {"boolean": {}},
         "password": {"string": {}},
         "contrats": {
-          "HasMany": "Contrat"
+          "hasMany": "Contrat"
         }
     },
     "Contrat":{
