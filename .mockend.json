@@ -1,6 +1,15 @@
 {
     "User":{
-        "identifier": ""
+        "identifier": {"string": {}},
+        "name": {"string": {}},
+        "validate": {"boolean": {}},
+        "password": {"loremWord": {}}
+    },
+    "Contrat":{
+        "identifier": {"string": {}},
+        "name": {"string": {}},
+        "validate": {"boolean": {}},
+        "password": {"loremWord": {}}
     },
     "Post": {
       "title": { "string": {} },
