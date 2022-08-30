@@ -1,15 +1,21 @@
 {
     "User":{
         "identifier": {"string": {}},
-        "name": {"string": {}},
+        "name": {"loremWord": {}},
         "validate": {"boolean": {}},
-        "password": {"loremWord": {}}
+        "password": {"string": {}},
+        "contrats": {
+          "HasMany": "Contrat"
+        }
     },
     "Contrat":{
-        "identifier": {"string": {}},
-        "name": {"string": {}},
-        "validate": {"boolean": {}},
-        "password": {"loremWord": {}}
+        "num": {"int": {"min": 0, "max": 1000000}},
+        "category": {"string": ["Auto", "Scolaire", "Habitat", "Santé"]},
+        "formule": {"string": ["Essentiel", "Premium", "Méga"]},
+        "title": {"loremWord": {}},
+        "user": {
+          "belongsTo": "User"
+        }
     },
     "Post": {
       "title": { "string": {} },
