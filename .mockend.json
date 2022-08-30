@@ -82,6 +82,9 @@
         "maxLength": 100
       }
     },
+    "town": {
+      "loremWord": {}
+    },
     "postalCode": {
       "int": {
         "min": 97400,
