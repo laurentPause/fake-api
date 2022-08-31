@@ -122,9 +122,5 @@
       "maxLength": 20
     }},
     "relation": { "string": ["parent", "enfant", "conjoint", "conjointe"]}
-  },
-  "Paper": {
-    "active": { "boolean": {}},
-    "contrat": { "string": ["Assurance auto", "Assurance moto", "Assurance habitation", "Assurance santé", "Protection juridique"]}
   }
 }
