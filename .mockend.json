@@ -115,5 +115,12 @@
   "Notification": {
     "email": { "boolean": {}},
     "sms": { "boolean": {}}
+  },
+  "Relationship": {
+    "fullName": {  "loremWords": {
+      "minLength": 5,
+      "maxLength": 20
+    }},
+    "relation": { "string": ["parent", "enfant", "conjoint", "conjointe"]}
   }
 }
