@@ -200,11 +200,16 @@
         "max": 20000
       }
     },
-    "periodicity": {"string": ["Mensuel", "Annuel"]},
+    "periodicity": {
+      "string": [
+        "Mensuel",
+        "Annuel"
+      ]
+    },
     "nextPayment": {
-      "dateTime" : {
+      "dateTime": {
         "min": "2022-09-31T23:59:59Z",
-        "max": "2023-09-31T00:00:00Z"
+        "max": "2050-09-31T00:00:00Z"
       }
     },
     "category": {
