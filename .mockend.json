@@ -41,6 +41,9 @@
     "title": {
       "loremWord": {}
     },
+    "terminated": {
+      "boolean": {}
+    },
     "user": {
       "belongsTo": "User"
     }
