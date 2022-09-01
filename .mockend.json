@@ -206,12 +206,6 @@
         "Annuel"
       ]
     },
-    "nextPayment": {
-      "dateTime": {
-        "min": "2022-09-31T23:59:59Z",
-        "max": "2050-09-31T00:00:00Z"
-      }
-    },
     "category": {
       "string": [
         "auto",
