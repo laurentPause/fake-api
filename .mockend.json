@@ -111,23 +111,110 @@
     }
   },
   "Bank": {
-    "type": {"string": ["prélèvement", "remboursement"]},
-    "bank": { "loremWord": {}},
-    "iban": {"regexp": "FR[0-9]{2}[*]{10}[A-Z][0-9]{2}"}
+    "type": {
+      "string": [
+        "prélèvement",
+        "remboursement"
+      ]
+    },
+    "bank": {
+      "loremWord": {}
+    },
+    "iban": {
+      "regexp": "FR[0-9]{2}[*]{10}[A-Z][0-9]{2}"
+    }
   },
   "Notification": {
-    "email": { "boolean": {}},
-    "sms": { "boolean": {}}
+    "email": {
+      "boolean": {}
+    },
+    "sms": {
+      "boolean": {}
+    }
   },
   "Relationship": {
-    "fullName": {  "loremWords": {
-      "minLength": 5,
-      "maxLength": 20
-    }},
-    "relation": { "string": ["parent", "enfant", "conjoint", "conjointe"]}
+    "fullName": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "relation": {
+      "string": [
+        "parent",
+        "enfant",
+        "conjoint",
+        "conjointe"
+      ]
+    }
   },
   "Paper": {
-    "active": { "boolean": {}},
-    "contrat": { "string": ["Assurance auto", "Assurance moto", "Assurance habitation", "Assurance santé", "Protection juridique"]}
+    "active": {
+      "boolean": {}
+    },
+    "contrat": {
+      "string": [
+        "Assurance auto",
+        "Assurance moto",
+        "Assurance habitation",
+        "Assurance santé",
+        "Protection juridique"
+      ]
+    }
+  },
+  "Info-contrat": {
+    "full_name": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "effectiveDate": {
+      "dateTime": {
+        "min": "2005-01-01T00:00:00Z",
+        "max": "2022-08-31T23:59:59Z"
+      }
+    },
+    "dueDate": {
+      "dateTime": {
+        "min": "2022-10-31T23:59:59Z",
+        "max": "2050-01-01T00:00:00Z"
+      }
+    },
+    "typePayment": {
+      "string": [
+        "Prélèvement",
+        "Carte Bancaire",
+        "Comptant"
+      ]
+    },
+    "annualFee": {
+      "int": {
+        "min": 1000,
+        "max": 20000
+      }
+    },
+    "balance": {
+      "int": {
+        "min": 0,
+        "max": 20000
+      }
+    },
+    "periodicity": {"string": ["Mensuel", "Annuel"]},
+    "nextPayment": {
+      "dateTime" : {
+        "min": "2022-09-31T23:59:59Z",
+        "max": "2023-09-31T00:00:00Z"
+      }
+    },
+    "category": {
+      "string": [
+        "auto",
+        "santé",
+        "habitat",
+        "moto",
+        "juridique"
+      ]
+    }
   }
 }
