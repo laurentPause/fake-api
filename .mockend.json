@@ -11,9 +11,6 @@
     },
     "password": {
       "string": {}
-    },
-    "contrats": {
-      "hasMany": "Contrat"
     }
   },
   "Contrat": {
@@ -27,8 +24,12 @@
       "string": [
         "Auto",
         "Scolaire",
-        "Habitat",
-        "Santé"
+        "Habitation",
+        "Santé",
+        "Juridique",
+        "Vie",
+        "Retraite",
+        "Prévoyance"
       ]
     },
     "formule": {
@@ -39,13 +40,10 @@
       ]
     },
     "title": {
-      "loremWord": {}
+      "string": ["Contrat"]
     },
     "terminated": {
       "boolean": {}
-    },
-    "user": {
-      "belongsTo": "User"
     }
   },
   "Personal": {
@@ -88,16 +86,13 @@
       }
     },
     "placeOfBirth": {
-      "loremWord": {}
+      "string": ["Saint-Denis", "Saint-Pierre", "Saint-Paul", "Saint-Benoît"]
     },
     "address": {
-      "loremSentences": {
-        "minLength": 30,
-        "maxLength": 100
-      }
+     "regexp": "[0-9]{3} (?:rue|allée|chemin) [a-z]{10} "
     },
     "town": {
-      "loremWord": {}
+      "string": ["Saint-Denis", "Saint-Pierre", "Saint-Paul", "Saint-Benoît"]
     },
     "postalCode": {
       "int": {
@@ -106,10 +101,10 @@
       }
     },
     "cellphone": {
-      "regexp": "[0-9]{10}"
+      "regexp": "069[2-3][0-9]{6}"
     },
     "phone": {
-      "regexp": "[0-9]{10}"
+      "regexp": "0262[0-9]{6}"
     },
     "email": {
       "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
@@ -129,7 +124,7 @@
       ]
     },
     "bank": {
-      "loremWord": {}
+      "string": ["Saint-Denis", "Saint-Pierre", "Saint-Paul", "Saint-Benoît"]
     },
     "iban": {
       "regexp": "FR[0-9]{2}[*]{10}[A-Z][0-9]{2}"
@@ -229,15 +224,6 @@
       "string": [
         "Mensuel",
         "Annuel"
-      ]
-    },
-    "category": {
-      "string": [
-        "auto",
-        "santé",
-        "habitat",
-        "moto",
-        "juridique"
       ]
     },
     "bandeau": {
