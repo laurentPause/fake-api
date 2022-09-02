@@ -34,8 +34,8 @@
     "formule": {
       "string": [
         "Essentiel",
-        "Premium",
-        "Méga"
+        "Complet",
+        "Sérénité"
       ]
     },
     "title": {
@@ -62,13 +62,24 @@
       ]
     },
     "fullName": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
-      }
+      "string": [
+        "Thomas Hoarau",
+        "Alexis Payet",
+        "Léa Fontaine",
+        "Léane Robert",
+        "Jérémy Lebon",
+        "Simon Hoareau"
+      ]
     },
     "nameOfBirth": {
-      "loremWord": {}
+      "string": [
+        "Hoarau",
+        "Payet",
+        "Fontaine",
+        "Robert",
+        "Lebon",
+        "Hoareau"
+      ]
     },
     "dateOfBirth": {
       "dateTime": {
@@ -134,10 +145,14 @@
   },
   "Relationship": {
     "fullName": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
-      }
+      "string": [
+        "Thomas Hoarau",
+        "Alexis Payet",
+        "Léa Fontaine",
+        "Jérémy Robert",
+        "Léane Lebon",
+        "Simon Hoareau"
+      ]
     },
     "relation": {
       "string": [
@@ -164,10 +179,14 @@
   },
   "Infocontrat": {
     "full_name": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
-      }
+      "string": [
+        "Thomas Hoarau",
+        "Alexis Payet",
+        "Léa Fontaine",
+        "Jérémy Robert",
+        "Léane Lebon",
+        "Simon Hoareau"
+      ]
     },
     "effectiveDate": {
       "dateTime": {
