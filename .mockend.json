@@ -44,65 +44,8 @@
     "terminated": {
       "boolean": {}
     },
-    "Infocontrat": {
-      "full_name": {
-        "loremWords": {
-          "minLength": 5,
-          "maxLength": 20
-        }
-      },
-      "effectiveDate": {
-        "dateTime": {
-          "min": "2005-01-01T00:00:00Z",
-          "max": "2022-08-31T23:59:59Z"
-        }
-      },
-      "dueDate": {
-        "dateTime": {
-          "min": "2022-10-31T23:59:59Z",
-          "max": "2050-01-01T00:00:00Z"
-        }
-      },
-      "nextPayment": {
-        "dateTime": {
-          "min": "2022-10-31T23:59:59Z",
-          "max": "2050-01-01T00:00:00Z"
-        }
-      },
-      "typePayment": {
-        "string": [
-          "Prélèvement",
-          "Carte Bancaire",
-          "Comptant"
-        ]
-      },
-      "annualFee": {
-        "int": {
-          "min": 1000,
-          "max": 20000
-        }
-      },
-      "balance": {
-        "int": {
-          "min": 0,
-          "max": 20000
-        }
-      },
-      "periodicity": {
-        "string": [
-          "Mensuel",
-          "Annuel"
-        ]
-      },
-      "category": {
-        "string": [
-          "auto",
-          "santé",
-          "habitat",
-          "moto",
-          "juridique"
-        ]
-      }
+    "user": {
+      "belongsTo": "User"
     }
   },
   "Personal": {
@@ -218,6 +161,65 @@
         "Protection juridique"
       ]
     }
+  },
+  "Infocontrat": {
+    "full_name": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "effectiveDate": {
+      "dateTime": {
+        "min": "2005-01-01T00:00:00Z",
+        "max": "2022-08-31T23:59:59Z"
+      }
+    },
+    "dueDate": {
+      "dateTime": {
+        "min": "2022-10-31T23:59:59Z",
+        "max": "2050-01-01T00:00:00Z"
+      }
+    },
+    "nextPayment": {
+      "dateTime": {
+        "min": "2022-10-31T23:59:59Z",
+        "max": "2050-01-01T00:00:00Z"
+      }
+    },
+    "typePayment": {
+      "string": [
+        "Prélèvement",
+        "Carte Bancaire",
+        "Comptant"
+      ]
+    },
+    "annualFee": {
+      "int": {
+        "min": 1000,
+        "max": 20000
+      }
+    },
+    "balance": {
+      "int": {
+        "min": 0,
+        "max": 20000
+      }
+    },
+    "periodicity": {
+      "string": [
+        "Mensuel",
+        "Annuel"
+      ]
+    },
+    "category": {
+      "string": [
+        "auto",
+        "santé",
+        "habitat",
+        "moto",
+        "juridique"
+      ]
+    }
   }
-  
 }
