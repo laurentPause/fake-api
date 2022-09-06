@@ -47,74 +47,60 @@
     }
   },
   "Personal": {
-    "num": {
-      "int": {
-        "min": 0,
-        "max": 1000000
-      }
-    },
-    "civility": {
-      "string": [
-        "Monsieur",
-        "Madame"
-      ]
-    },
-    "fullName": {
-      "string": [
-        "Thomas Hoarau",
-        "Alexis Payet",
-        "Léa Fontaine",
-        "Léane Robert",
-        "Jérémy Lebon",
-        "Simon Hoareau"
-      ]
-    },
-    "nameOfBirth": {
-      "string": [
-        "Hoarau",
-        "Payet",
-        "Fontaine",
-        "Robert",
-        "Lebon",
-        "Hoareau"
-      ]
-    },
-    "dateOfBirth": {
-      "dateTime": {
-        "min": "1950-01-01T00:00:00Z",
-        "max": "2000-12-31T23:59:59Z"
-      }
-    },
-    "placeOfBirth": {
-      "string": ["Saint-Denis", "Saint-Pierre", "Saint-Paul", "Saint-Benoît"]
-    },
-    "address": {
-     "regexp": "[0-9]{3} (?:rue|allée|chemin) [a-z]{10} "
-    },
-    "town": {
-      "string": ["Saint-Denis", "Saint-Pierre", "Saint-Paul", "Saint-Benoît"]
-    },
-    "postalCode": {
-      "int": {
-        "min": 97400,
-        "max": 97499
-      }
-    },
-    "cellphone": {
-      "regexp": "069[2-3][0-9]{6}"
-    },
-    "phone": {
-      "regexp": "0262[0-9]{6}"
-    },
-    "email": {
-      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
-    },
-    "occupation": {
-      "loremWord": {}
-    },
-    "socialSecurityNumber": {
-      "regexp": "[0-9]{10}"
-    }
+    "nom": {"string": [
+      "Hoarau",
+      "Payet",
+      "Fontaine",
+      "Robert",
+      "Lebon",
+      "Hoareau"
+    ]},
+    "prenom": {"string": [
+      "Thomas",
+      "Alexis",
+      "Léa",
+      "Jérémy",
+      "Léane",
+      "Simon"
+    ]},
+    "dateNaissance": { "dateTime": {
+      "min": "1952-01-01T00:00:00Z",
+      "max": "2000-08-31T23:59:59Z"
+    }},
+    "lieuNaissance": {"string":["Saint-Denis", "Saint-Pierre", "Saint-Paul", "Saint-Benoît"]},
+    "paysNaissance": {"string":["France"]},
+    "situationFamiliale": {"string":["C,M,V"]},
+    "nomNaissance": {"string":[
+      "Hoarau",
+      "Payet",
+      "Fontaine",
+      "Robert",
+      "Lebon",
+      "Hoareau"
+    ]},
+    "nombreEnfants": {"int":{ "min": 0, "max": 5 }},
+    "telephoneFixe": {"regexp":"069[2-3][0-9]{6}"},
+    "telephoneMobile": {"regexp":"0262[0-9]{6}"},
+    "adresseMail": {"regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" },
+    "numSecu": {"regexp":"[0-9]{15}"},
+    "notifMail": {"boolean":{}},
+    "notifSms": {"boolean":{}},
+    "adresse1": {"regexp":"[0-9]{2}|[0-9]{3} (rue|allée|chemin) (papangue|juliette)"},
+    "adresse2": {"regexp":"([0-9]{2}|[0-9]{3} (rue|allée|chemin) (papangue|juliette)| )"},
+    "adresse3": {"regexp":""},
+    "codePostal": {"int":{ "min": 97400, "max": 97499 }},
+    "bureauDistributeur": {"string":["Saint-Denis", "Saint-Pierre", "Saint-Paul", "Saint-Benoît"]},
+    "numeroAppartement": {"int":{ "min": 1, "max": 45 }},
+    "numeroBatiment": {"int":{ "min": 1, "max": 45 }},
+    "typeBatiment": {"string":["Résidence", "Immeuble"]},
+    "nomBatiment": {"string":["Les Alizés", "Butor", "La Rocade"]},
+    "numVoie": {"int":{"min": 1, "max": 356}},
+    "bisTer": {"int":{"min": 1, "max": 356}},
+    "nomVoie": {"regexp":"(rue|allée|chemin) (papangue|juliette)"},
+    "lieuDit": {"string":["Le Moufia", "Bellepierre", "La Montagne"]},
+    "boitePostale": {"int":{"min": 0, "max": 356}},
+    "codeCedex": {"int":{"min": 0, "max": 356}},
+    "libelleCedex": {"int":{"min": 0, "max": 356}}
   },
   "Bank": {
     "type": {
