@@ -23,13 +23,17 @@
         "Assurance moto",
         "Assurance habitation",
         "Assurance santé",
-        "Protection juridique"
+        "Protection juridique",
+        "Vie",
+        "Prévoyance",
+        "Retraite"
       ]
     },
     "codeBranche": {
       "string": [
         "A",
-        "M"
+        "H",
+        ""
       ]
     },
     "contratId": {
