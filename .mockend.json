@@ -23,6 +23,7 @@
         "Assurance moto",
         "Assurance habitation",
         "Assurance santé",
+        "Assurance scolaire",
         "Protection juridique",
         "Vie",
         "Prévoyance",
@@ -32,8 +33,7 @@
     "codeBranche": {
       "string": [
         "A",
-        "H",
-        ""
+        "H"
       ]
     },
     "contratId": {
@@ -357,6 +357,93 @@
     },
     "bandeau": {
       "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1000/200"
+    }
+  },
+  "Detailcontrat": {
+    "codeProduit": {
+      "regexp": "[0-9][A-Z][0-9]{2}"
+    },
+    "familleAssurance": {
+      "string": [
+        "Assurance auto",
+        "Assurance moto",
+        "Assurance habitation",
+        "Assurance santé",
+        "Assurance scolaire",
+        "Protection juridique",
+        "Vie",
+        "Prévoyance",
+        "Retraite"
+      ]
+    },
+    "formul": {
+      "string": [
+        "Essentiel",
+        "Complet"
+      ]
+    },
+    "intermediaire": {
+      "regexp": "[0-9]{6}"
+    },
+    "codeIban": {
+      "regexp": "FR[0-9]{12}"
+    },
+    "etatContrat": {
+      "string": [
+        "E",
+        "R"
+      ]
+    },
+    "dateEffet": {
+      "dateTime": {
+        "min": "2020-01-01T00:00:00Z",
+        "max": "2022-08-31T23:59:59Z"
+      }
+    },
+    "dateEcheance": {
+      "dateTime": {
+        "min": "2023-01-01T00:00:00Z",
+        "max": "2030-08-31T23:59:59Z"
+      }
+    },
+    "dateResiliation": {
+      "regexp": ""
+    },
+    "codeModePaiement": {
+      "string": [
+        "C",
+        "P"
+      ]
+    },
+    "primeTotale": {
+      "int": {
+        "min": 100,
+        "max": 1000
+      }
+    },
+    "frequencePaiement": {
+      "string": [
+        "A",
+        "M"
+      ]
+    },
+    "dateProchainPrelevement": {
+      "dateTime": {
+        "min": "2022-10-31T23:59:59Z",
+        "max": "2023-01-01T00:00:00Z"
+      }
+    },
+    "montantProchainPrelevement": {
+      "int": {
+        "min": 0,
+        "max": 1000
+      }
+    },
+    "solde": {
+      "int": {
+        "min": 0,
+        "max": 1000
+      }
     }
   }
 }
