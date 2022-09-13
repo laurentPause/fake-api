@@ -602,12 +602,10 @@
   },
   "Contactcontrat": {
     "nom":                {"string": [
-      "Thomas Hoarau",
-      "Alexis Payet",
-      "Léa Fontaine",
-      "Jérémy Robert",
-      "Léane Lebon",
-      "Simon Hoareau"
+      "PC de Saint-Denis",
+      "PC de Saint-Pierre",
+      "PC de Saint-Paul",
+      "PC de Saint-Benoît"
     ]},
     "adresse1":           {"regexp": "[0-9]{2} rue papangue"},
     "adresse2":           {"string":{}},
