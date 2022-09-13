@@ -446,86 +446,158 @@
       }
     }
   },
-  "Specificauto" : {
-    "marque": {"string": [
-      "BMW",
-      "Renault"
-    ]},
-    "modele": { "int": {
-      "min": 5,
-      "max": 908
-    }},
-    "immatriculation": {"string": {}},
-    "typeGarage": {"string": {}},
-    "usage": {"string": {}},
-    "codePostal": {  "int": {
-      "min": 97400,
-      "max": 97499
-    }},
-    "bureauDistributeur": { "string": [
-      "Saint-Denis",
-      "Saint-Pierre",
-      "Saint-Paul",
-      "Saint-Benoît"
-    ]}
+  "Specificauto": {
+    "marque": {
+      "string": [
+        "BMW",
+        "Renault"
+      ]
+    },
+    "modele": {
+      "int": {
+        "min": 5,
+        "max": 908
+      }
+    },
+    "immatriculation": {
+      "string": {}
+    },
+    "typeGarage": {
+      "string": {}
+    },
+    "usage": {
+      "string": {}
+    },
+    "codePostal": {
+      "int": {
+        "min": 97400,
+        "max": 97499
+      }
+    },
+    "bureauDistributeur": {
+      "string": [
+        "Saint-Denis",
+        "Saint-Pierre",
+        "Saint-Paul",
+        "Saint-Benoît"
+      ]
+    }
   },
-  "conducteurs": {
-    "nom": { "string": [
-      "Hoarau",
-      "Payet",
-      "Fontaine",
-      "Robert",
-      "Lebon",
-      "Hoareau"
-    ]},
-    "prenom": { "string": [
-      "Thomas",
-      "Alexis",
-      "Léa",
-      "Jérémy",
-      "Léane",
-      "Simon"
-    ]},
-    "typeConducteur": {"string": ["S", "A"]},
-    "bonusMalus": {"regexp": "0.[0-9]{2}"}
+  "Conducteur": {
+    "nom": {
+      "string": [
+        "Hoarau",
+        "Payet",
+        "Fontaine",
+        "Robert",
+        "Lebon",
+        "Hoareau"
+      ]
+    },
+    "prenom": {
+      "string": [
+        "Thomas",
+        "Alexis",
+        "Léa",
+        "Jérémy",
+        "Léane",
+        "Simon"
+      ]
+    },
+    "typeConducteur": {
+      "string": [
+        "S",
+        "A"
+      ]
+    },
+    "bonusMalus": {
+      "regexp": "0.[0-9]{2}"
+    }
   },
   "Specifichabitation": {
-    "typeResidence": {"string": {}},
-    "natureDuBien": {"string": {}},
-    "qualiteAssure": {"string": ["Propriétaire", "Locataire"]},
-    "nombrePiece": {"int": {"min": 2, "max": 7}},
-    "superifice": {"int": {"min": 30, "max": 250}},
-    "valeurContenu": {"int": {"min": 1000, "max": 1000000}},
-    "adresseLigne1": {"string": ["12 rue papange"]},
-    "adresseLigne2": {"string": {}},
-    "adresseLigne3": {"string": {}},
-    "codePostal": {"int": { "min": 97400,
-    "max": 97499}},
-    "bureauDistributeau": {"string": [
-      "Saint-Denis",
-      "Saint-Pierre",
-      "Saint-Paul",
-      "Saint-Benoît"
-    ]}
+    "typeResidence": {
+      "string": {}
+    },
+    "natureDuBien": {
+      "string": {}
+    },
+    "qualiteAssure": {
+      "string": [
+        "Propriétaire",
+        "Locataire"
+      ]
+    },
+    "nombrePiece": {
+      "int": {
+        "min": 2,
+        "max": 7
+      }
+    },
+    "superifice": {
+      "int": {
+        "min": 30,
+        "max": 250
+      }
+    },
+    "valeurContenu": {
+      "int": {
+        "min": 1000,
+        "max": 1000000
+      }
+    },
+    "adresseLigne1": {
+      "string": [
+        "12 rue papange"
+      ]
+    },
+    "adresseLigne2": {
+      "string": {}
+    },
+    "adresseLigne3": {
+      "string": {}
+    },
+    "codePostal": {
+      "int": {
+        "min": 97400,
+        "max": 97499
+      }
+    },
+    "bureauDistributeau": {
+      "string": [
+        "Saint-Denis",
+        "Saint-Pierre",
+        "Saint-Paul",
+        "Saint-Benoît"
+      ]
+    }
   },
   "Specificschoolandhealth": {
-    "nom": {"string":[
-      "Hoarau",
-      "Payet",
-      "Fontaine",
-      "Robert",
-      "Lebon",
-      "Hoareau"
-    ]},
-    "prenom": {"string":[
-      "Thomas",
-      "Alexis",
-      "Léa",
-      "Jérémy",
-      "Léane",
-      "Simon"
-    ]},
-    "typeBeneficiaire": {"string":["A","E","C"]}
+    "nom": {
+      "string": [
+        "Hoarau",
+        "Payet",
+        "Fontaine",
+        "Robert",
+        "Lebon",
+        "Hoareau"
+      ]
+    },
+    "prenom": {
+      "string": [
+        "Thomas",
+        "Alexis",
+        "Léa",
+        "Jérémy",
+        "Léane",
+        "Simon"
+      ]
+    },
+    "typeBeneficiaire": {
+      "string": [
+        "A",
+        "E",
+        "C"
+      ]
+    }
   }
-
 }
