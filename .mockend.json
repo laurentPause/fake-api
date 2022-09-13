@@ -599,5 +599,33 @@
         "C"
       ]
     }
+  },
+  "Contactcontrat": {
+    "nom":                {"string": [
+      "Thomas Hoarau",
+      "Alexis Payet",
+      "Léa Fontaine",
+      "Jérémy Robert",
+      "Léane Lebon",
+      "Simon Hoareau"
+    ]},
+    "adresse1":           {"regexp": "[0-9]{2} rue papangue"},
+    "adresse2":           {"string":{}},
+    "adresse3":           {"string":{}},
+    "codePostal":         { "int": {
+      "min": 97400,
+      "max": 97499
+    }},
+    "bureauDistributeur": {"string":[
+      "Saint-Denis",
+      "Saint-Pierre",
+      "Saint-Paul",
+      "Saint-Benoît"
+    ]},
+    "telephoneFixe":      {"regexp": "069[2-3][0-9]{6}"},
+    "adresseMail":        {"regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"},
+    "heuresOuvertures":   {"string":[
+      "08:00 - 16h00"
+    ]}
   }
 }
