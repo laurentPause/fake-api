@@ -601,29 +601,120 @@
     }
   },
   "Contactcontrat": {
-    "nom":                {"string": [
-      "PC de Saint-Denis",
-      "PC de Saint-Pierre",
-      "PC de Saint-Paul",
-      "PC de Saint-Benoît"
-    ]},
-    "adresse1":           {"regexp": "[0-9]{2} rue papangue"},
-    "adresse2":           {"string":{}},
-    "adresse3":           {"string":{}},
-    "codePostal":         { "int": {
-      "min": 97400,
-      "max": 97499
-    }},
-    "bureauDistributeur": {"string":[
-      "Saint-Denis",
-      "Saint-Pierre",
-      "Saint-Paul",
-      "Saint-Benoît"
-    ]},
-    "telephoneFixe":      {"regexp": "069[2-3][0-9]{6}"},
-    "adresseMail":        {"regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"},
-    "heuresOuvertures":   {"string":[
-      "08:00 - 16h00"
-    ]}
+    "nom": {
+      "string": [
+        "PC de Saint-Denis",
+        "PC de Saint-Pierre",
+        "PC de Saint-Paul",
+        "PC de Saint-Benoît"
+      ]
+    },
+    "adresse1": {
+      "regexp": "[0-9]{2} rue papangue"
+    },
+    "adresse2": {
+      "string": {}
+    },
+    "adresse3": {
+      "string": {}
+    },
+    "codePostal": {
+      "int": {
+        "min": 97400,
+        "max": 97499
+      }
+    },
+    "bureauDistributeur": {
+      "string": [
+        "Saint-Denis",
+        "Saint-Pierre",
+        "Saint-Paul",
+        "Saint-Benoît"
+      ]
+    },
+    "telephoneFixe": {
+      "regexp": "069[2-3][0-9]{6}"
+    },
+    "adresseMail": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "heuresOuvertures": {
+      "string": [
+        "08:00 - 16h00"
+      ]
+    }
+  },
+  "Contact": {
+    "nom": {
+      "string": [
+        "PC de Saint-Denis",
+        "PC de Saint-Pierre",
+        "PC de Saint-Paul",
+        "PC de Saint-Benoît"
+      ]
+    },
+    "adresse1": {
+      "regexp": "[0-9]{2} rue papangue"
+    },
+    "adresse2": {
+      "string": {}
+    },
+    "adresse3": {
+      "string": {}
+    },
+    "codePostal": {
+      "int": {
+        "min": 97400,
+        "max": 97499
+      }
+    },
+    "bureauDistributeur": {
+      "string": [
+        "Saint-Denis",
+        "Saint-Pierre",
+        "Saint-Paul",
+        "Saint-Benoît"
+      ]
+    },
+    "telephoneFixe": {
+      "regexp": "069[2-3][0-9]{6}"
+    },
+    "adresseMail": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "heuresOuvertures": {
+      "string": [
+        "08:00 - 16h00"
+      ]
+    },
+    "codeBranche": {
+      "string": [
+        "A",
+        "H",
+        "S"
+      ]
+    },
+    "numContrat": {
+      "int": {
+        "min": 100000,
+        "max": 199999
+      }
+    },
+    "familleAssurance": {
+      "string": [
+        "Auto",
+        "Moto",
+        "Habitation",
+        "Santé",
+        "Scolaire",
+        "Protection juridique",
+        "Vie",
+        "Prévoyance",
+        "Retraite"
+      ]
+    },
+    "informationsComplementaires": {
+      "string": {}
+    }
   }
 }
