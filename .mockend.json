@@ -716,5 +716,20 @@
     "informationsComplementaires": {
       "string": {}
     }
+  },
+  "Document": {
+    "name": {
+      "string": [
+        "Attestation",
+        "Relevé d'informations",
+        "Demande de pièces manquantes"
+      ]
+    },
+    "date": {
+      "dateTime": {
+        "min": "2020-01-01T00:00:00Z",
+        "max": "2022-09-31T23:59:59Z"
+      }
+    }
   }
 }
